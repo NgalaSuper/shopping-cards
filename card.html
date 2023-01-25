@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Cards</title>
+</head>
+<body>
+    <div class="main">
+        <div class="content">
+             <div class="card-box">
+                <div class="card1">
+                    <div class="stars">
+                        <a href="#"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                        <a href="#"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                        <a href="#"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                        <a href="#"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                        <a href="#"><ion-icon class="stars-icon1" name="star"></ion-icon></a>
+                    </div>
+                    <div class="images section" animate__backInDown style="display: block;" id="images">
+                        <img src="images/pngegg (1).png" alt="" id="images">
+                    </div>
+                    <div class="images1 section" animate__backInDown style="display: none;" id="images1">
+                        <img src="images/pngegg (1).png" alt="">
+                    </div>
+                    <div class="images3 section" animate__backInDown style="display: none;" id="images3">
+                        <img src="images/pngwing.com (1).png" alt="">
+                    </div>
+                    <div class="images4 section" style="display: none;" id="images4">
+                        <img src="images/pngwing.com (1).png" alt="">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="circle"></div>
+                    <div class="arrow-back"><a href="#" onclick="showSection('images')"><ion-icon name="chevron-back-circle-outline"></ion-icon></a></div>
+                    <div class="arrow-forward"><a href="#" onclick="showSection('images1')"><ion-icon name="chevron-forward-circle-outline"></ion-icon></a></div>
+                </div>  
+                <div class="content2">
+                <div class="name-price">
+                    <h3>98$</h3>
+                    <h4>Nike Airmax</h4>
+                </div>
+                <div class="size">
+                    <h4 style="margin-bottom: 8px;">Size</h4>
+                    <a href="#" id="size" onclick="changeColor(this)">41</a>
+                    <a href="#" id="size" onclick="changeColor(this)" class="notclicked">42</a>
+                    <a href="#" id="size" onclick="changeColor(this)" class="notclicked">43</a>
+                    <a href="#" id="size" onclick="changeColor(this)" class="notclicked">44</a>
+                </div>
+                <div class="colors">
+                    <h4 style="margin-bottom: 8px;">Colors</h4>
+                    <a href="#" id="myLink1" onclick="showSection('images')"><ion-icon id="icon1" name="ellipse"></ion-icon></a>
+                    <a href="#" id="myLink2" onclick="showSection('images3')"><ion-icon id="icon2" name="ellipse"></ion-icon></a>
+                    <a href="#" id="myLink3"><ion-icon id="icon3" name="ellipse"></ion-icon></a>
+                </div>
+                <div class="discription">
+                    <h4 style="margin-bottom: 0;">Discription</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatem.</p>
+                </div>
+                <div class="buttonat">
+                    <a href="">BUY NOW</a>
+                    <a href="" style="margin-left: 58px;">ADD TO CARD</a>
+                </div>
+            </div>
+        </div>
+            <div class="card2-box">
+                <div class="card2">
+                    <div class="image-box">
+                        <div class="img1 section1" id="showimage1" style="display: block;">
+                        <img src="images/pngwing.com (1).png"  alt="">
+                        </div>
+                    <div class="img2 section1" id="showimage2" style="display: none;">
+                        <img src="images/pngwing.com (1).png" class="img2" alt="" >
+                    </div>
+                    <div class="img3 section1" id="showimage3" style="display: none;">
+                        <img src="images/pngegg (1).png"  alt="">
+                        </div>
+                        <div class="img4 section1" id="showimage4" style="display: none;">
+                            <img src="images/pngegg (1).png"  alt="">
+                            </div>
+                        <a href="#" ><ion-icon name="ellipse" id="change-circle" onclick="changeColorCircle(this), showSection1('showimage1')" class="defualt-color" style="color: #087C78;"></ion-icon></a>
+                        <a href="#" ><ion-icon name="ellipse" id="change-circle" onclick="changeColorCircle(this), showSection1('showimage2')"></ion-icon></a>
+                        <a href="#"><ion-icon name="ellipse"  id="change-circle" onclick="changeColorCircle(this), showSection1('showimage3')"></ion-icon></a>
+                    </div>
+                </div>
+                <div class="background2">
+                    <div class="content-starandtext">
+                         <h3>Nike Airmax</h3>
+                             <a href="#" class="stars-rent"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                             <a href="#" class="stars-rent"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                            <a href="#" class="stars-rent"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                            <a href="#" class="stars-rent"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                             <a href="#" class="stars-rent"><ion-icon class="stars-icon" name="star"></ion-icon></a>
+                    </div>
+                    <div class="price">
+                        <h2>98$</h2>
+                    </div>
+                    <div class="sizeofproduct">
+                        <h6>SIZE</h6>
+                        <a href="#" style="background: #087c78;color: white;" id="changeolorsize" onclick="changeColorSize(this)">41</a>
+                        <a href="#" id="changeolorsize" onclick="changeColorSize(this)" class="notclickedsize">42</a>
+                        <a href="#" id="changeolorsize" onclick="changeColorSize(this)" class="notclickedsize">43</a>
+                        <a href="#" id="changeolorsize" onclick="changeColorSize(this)" class="notclickedsize">44</a>
+                    </div>
+                    <div class="colorsneakers">
+                        <h6>COLORS</h6>
+                        <a href="#" class="default-color-change" id="changecolor-circle" onclick="showSection1('showimage1')"><ion-icon name="ellipse" class="defualt-color" style="color: #087C78;"></ion-icon></a>
+                        <a href="#" ><ion-icon name="ellipse" style="color: black;" id="changecolor-circle" onclick="showSection1('showimage3')"></ion-icon></a>
+                        <a href="#"><ion-icon style="color:red" name="ellipse"  id="changecolor-circle" onclick="showSection1('showimage3')"></ion-icon></a>
+                    </div>
+                    <div class="paragraphi-discription">
+                        <h6>Discription</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, amet?</p>
+                    </div>
+                    <div class="buttonat-order">
+                        <a href="#" class="bypernow" >BY NOW</a>
+                        <a href="#" class="basket"><ion-icon class="shop-card" name="cart"></ion-icon></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>
